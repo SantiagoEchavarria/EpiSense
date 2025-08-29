@@ -22,13 +22,13 @@ class WelcomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 24),
               Text(
-                'Bienvenido a Alzheimer Care',
+                'Bienvenido a EpiSense',
                 style: Theme.of(context).textTheme.displayMedium,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 16),
               Text(
-                'Una aplicación para el seguimiento y cuidado de personas con Alzheimer avanzado',
+                'Una aplicación para el seguimiento y cuidado de personas con epilepsia',
                 style: Theme.of(context).textTheme.bodyLarge,
                 textAlign: TextAlign.center,
               ),

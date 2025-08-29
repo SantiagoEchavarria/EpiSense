@@ -5,6 +5,8 @@ import 'package:pruebavercel/screens/history/location_history_screen.dart';
 import 'package:pruebavercel/screens/notifications/notifications_screen.dart';
 import 'package:pruebavercel/screens/profile/profile_screen.dart';
 import 'package:pruebavercel/theme/app_theme.dart';
+import 'package:pruebavercel/screens/chatbot/chatbot.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,8 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> _screens = [
     const MainHomeScreen(),
-    const LocationHistoryScreen(),
+    //const LocationHistoryScreen(),
     const AlertConfigScreen(),
+    const ChatPage(),
     const NotificationsScreen(),
     const ProfileScreen(),
   ];
@@ -49,6 +52,11 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.location_on_outlined),
             activeIcon: Icon(Icons.location_on),
             label: 'Ubicaciones',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat_outlined),
+            activeIcon: Icon(Icons.chat),
+            label: 'Chatbot', // 👈 Aquí tu chatbot
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications_outlined),
@@ -137,7 +145,7 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Alzheimer Care'),
+        title: const Text('EpiSense'),
         actions: [
           Switch(
             value: _isAlertSystemActive,

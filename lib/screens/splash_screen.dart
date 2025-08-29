@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const SizedBox(height: 24),
             Text(
-              'Alzheimer Care',
+              'EpiSense',
               style: Theme.of(context).textTheme.displayMedium?.copyWith(
                     color: AppTheme.primaryWhite,
                     fontWeight: FontWeight.bold,
